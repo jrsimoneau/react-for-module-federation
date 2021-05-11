@@ -28,10 +28,10 @@ module.exports = {
       template: "./public/index.html",
     }),
     new ModuleFederationPlugin({
-      name: "calendar_card",
+      name: "simple_component",
       filename: "remoteEntry.js",
       exposes: {
-        "./CalendarCard": "./src/CalendarCard",
+        "./SimpleComponent": "./src/SimpleComponent",
       },
       shared: ["react", "react-dom"],
     }),
